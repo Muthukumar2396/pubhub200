@@ -12,6 +12,6 @@
 	    Password:<input type="password" name="password" /><br /> 
 	 <input type="submit" value="login" />
 	</form>
-<a href="../users/list">List Users</a>
+</body>
 </body>
 </html>

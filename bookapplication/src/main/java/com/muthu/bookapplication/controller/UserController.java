@@ -33,8 +33,8 @@ public class UserController {
 	}
 	@PostMapping("/validate")
 	public String authorize(@RequestParam("email") String email, @RequestParam("password") String password) {
-
-		userRepo.findByEmailAndPassword(email, password);
+		user=null;
+		user=userRepo.findByEmailAndPassword(email, password);
 		if(user!=null){
 		System.out.println("User loged in " + email);
 		return "userview";
