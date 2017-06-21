@@ -7,8 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-Loggedin
-<a href="../books/list">List Books</a>
-<a href="../books/addbook">add Book</a>
+<form action="../books/save" method="post">
+		Book Name : <input type="text" name=name> 
+		Price : <input type="number" name=price>
+	 <input type="submit" value="submit">
+	</form>
 </body>
 </html>
