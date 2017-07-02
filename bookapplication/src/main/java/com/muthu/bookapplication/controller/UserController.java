@@ -31,17 +31,6 @@ public class UserController {
 		System.out.println("User added");
 		return "register";
 	}
-	@PostMapping("/validate")
-	public String authorize(@RequestParam("email") String email, @RequestParam("password") String password) {
-		user=null;
-		user=userRepo.findByEmailAndPassword(email, password);
-		if(user!=null){
-		System.out.println("User loged in " + email);
-		return "userview";
-		}
-		else
-			return "login";
-	}
 	@GetMapping("/login")
 	public String login_user() {
 		return "login";

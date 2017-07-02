@@ -7,11 +7,33 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="../users/validate" method="post">
-		Email ID:<input type="text" name="email" /><br />
-	    Password:<input type="password" name="password" /><br /> 
-	 <input type="submit" value="login" />
+	<%@ include file="../../header.jsp"%>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="container center_div">
+	<form action="../author/login" method="post"
+		class="form-horizontal">
+		<div class="form-group">
+			<label for="email" class="col-xs-3 control-label">Email</label>
+			<div class="col-xs-3">
+				<input type="email" placeholder="emailid" class="form-control" id="email" name="email">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="password" class="col-xs-3 control-label">Password</label>
+			<div class="col-xs-3">
+				<input type="password" class="form-control" id="passwword" placeholder="password" name="password">
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-xs-offset-3 col-xs-5">
+				<button type="submit" class="btn btn-primary btn-sg">Sign in</button>
+			</div>
+		</div>
 	</form>
+	</div>
 </body>
 </body>
 </html>
