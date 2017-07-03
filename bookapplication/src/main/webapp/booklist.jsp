@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -8,8 +8,27 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div><%@ include file="../../header.jsp"%></div>
-	<table>
+	<%@ include file="../../header.jsp"%><br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<span> <b> Sort by : </b>
+	</span> Price :
+	<a href="../books?price=asc"> <span class="btn btn-primary btn-sg">Low
+			to High</span>
+	</a>
+	<a href="../books?price=desc"><span class="btn btn-primary btn-sg">High
+			to Low</span></a>
+	<a href="../books?released_date=desc"><span
+		class="btn btn-primary btn-sg">Newest First</span></a>
+	<a href="../books/sales"><span class="btn btn-primary btn-sg">Top
+			Books</span></a>
+	<table class="table">
 		<thead>
 			<tr>
 				<th>Id</th>
@@ -19,18 +38,20 @@
 			</tr>
 		</thead>
 		<tbody>
-	      <c:forEach items="${books}" var="book">
-	       <tr>
-				<td>${book.id}</td>
-				<td>${book.name}</td>
-				<td>${book.price}</td>
-				<td>${book.releasedDate}</td>
-				<td><a href="/books/view/${book.id}">View</a></td>
-				
-			  </tr>
-				
+			<c:forEach items="${books}" var="book">
+				<tr>
+					<td>${book.id}</td>
+					<td>${book.name}</td>
+					<td>${book.price}</td>
+					<td>${book.releasedDate}</td>
+					<td><a href="../books/${book.id}"
+						class="btn btn-primary btn-sg">View</a></td>
+
+				</tr>
+
 			</c:forEach>
 		</tbody>
 	</table>
+
 </body>
 </html>
