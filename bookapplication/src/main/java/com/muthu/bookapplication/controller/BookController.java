@@ -20,7 +20,7 @@ public class BookController {
 	BookRepository bookRepo;
 	Book book = new Book();
 	
-	@GetMapping("/list")
+	@GetMapping("")
 	public String book_list(ModelMap modelMap)
 	{
 		List<Book> book =  bookRepo.findAll();
@@ -36,7 +36,7 @@ public class BookController {
 	public String show(@PathVariable("id") Integer id, ModelMap modelMap, HttpSession session) {
 		System.out.println("ShowBook:" + id);
 		Book book = bookRepo.findOne(id);
-		modelMap.addAttribute("book", book);
+		modelMap.addAttribute("SELECTED_BOOK", book);
 		return "view";
 	}
 }

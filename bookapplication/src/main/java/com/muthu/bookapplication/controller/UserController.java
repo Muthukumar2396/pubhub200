@@ -29,11 +29,12 @@ public class UserController {
 		user.setPassword(password);
 		userRepo.save(user);
 		System.out.println("User added");
-		return "register";
+		return "redirect:/";
 	}
 	@GetMapping("/login")
 	public String login_user() {
 		return "login";
 	}
+	
 
 }

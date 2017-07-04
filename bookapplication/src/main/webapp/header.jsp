@@ -1,5 +1,5 @@
-
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,19 +28,28 @@
 	<div class="container">
 		<!-- Logo and responsive toggle -->
 		<div class="navbar-header">
-			<a class="navbar-brand" href="index.jsp"> <span
+			<a class="navbar-brand" href="/"> <span
 				class="glyphicon glyphicon-fire"></span> Book Application
 			</a>
 		</div>
 		<!-- Navbar links -->
 		<div class="collapse navbar-collapse" id="navbar">
 			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="index.jsp">Home</a></li>
-				<li><a href="register.jsp">Signup</a></li>
-				<li><a href="login.jsp">Signin</a></li>
+				<li class="active"><a href="/">Home</a></li>
+				<c:if test="${!empty LOGGED_IN_USER}">
+					<li class="nav-item"><a class="nav-link"> Welcome
+							${LOGGED_IN_USER.name} </a></li>
+					<li class="nav-item"><a class="nav-link" href="/books">List
+							Books</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="../../author/logout">Logout</a></li>
+				</c:if>
+				<c:if test="${empty LOGGED_IN_USER}">
+					<li><a href="register.jsp">Signup</a></li>
+					<li><a href="login.jsp">Signin</a></li>
+				</c:if>
 				<li><a href="#">Contact</a></li>
 			</ul>
-
 		</div>
 		<!-- /.navbar-collapse -->
 	</div>

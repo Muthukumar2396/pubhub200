@@ -23,7 +23,7 @@
                 <div class="col-sm-6">
                 	<h2 class="section-header">Core Java</h2>
                 	<p class="lead text-muted">Java is a programming language and computing platform first released by Sun Microsystems in 1995. Java is fast, secure, and reliable.</p>
-                	<a href="#" class="btn btn-primary btn-lg">Add To Cart</a>
+                	<a href="#" class="btn btn-primary btn-lg">shop now</a>
                 </div>                
                 
             </div>
@@ -37,7 +37,7 @@
                 <div class="col-sm-6">
                 	<h2 class="section-header">MySql</h2>
                 	<p class="lead text-muted">MySQL is an open source relational database management system (RDBMS) based on Structured Query Language (SQL).</p>
-                	<a href="#" class="btn btn-primary btn-lg">Add to cart</a>
+                	<a href="#" class="btn btn-primary btn-lg">shop now</a>
                 </div>    
                 <div class="col-sm-6">
                     <img class="img-responsive img-rounded-circle" src="images/mysql.jpg" alt="">
@@ -55,7 +55,7 @@
                 <div class="col-sm-6">
                 	<h2 class="section-header">JavaScript</h2>
                 	<p class="lead text-muted">JavaScript is a programming language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else.</p>
-                	<a href="#" class="btn btn-primary btn-lg">Add To Cart</a>
+                	<a href="#" class="btn btn-primary btn-lg">shop now</a>
                 </div>                
                 
             </div>

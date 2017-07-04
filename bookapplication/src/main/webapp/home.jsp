@@ -7,8 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-Loggedin
-<a href="../books/list">List Books</a>
-<a href="../books/addbook">add Book</a>
+<%@ include file="../../header.jsp"%><br><br><br><br><br><br><br>
 </body>
 </html>
