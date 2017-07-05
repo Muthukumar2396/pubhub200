@@ -8,39 +8,43 @@
 </head>
 <body>
 	<%@ include file="../../header.jsp"%>
-	<br>
-	<br>
-	<br>
-	<br>
-	<div class="container center_div">
-	<form action="../users/save" method="post"
-		class="form-horizontal">
-		
-		<div class="form-group">
-			<label for="first_name" class="col-xs-3 control-label">Username</label>
-			<div class="col-xs-3">
-				<input type="text" class="form-control" placeholder="username" id="name" name="name">
-			</div>
+	<section class="content">
+	<div class="container">
+		<div class="container center_div">
+			<form action="../users/save" method="post" class="form-horizontal">
+
+				<div class="form-group">
+					<label for="first_name" class="col-xs-3 control-label">Username</label>
+					<div class="col-xs-3">
+						<input type="text" class="form-control" placeholder="username"
+							id="name" name="name">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="email" class="col-xs-3 control-label">Email</label>
+					<div class="col-xs-3">
+						<input type="email" placeholder="emailid" class="form-control"
+							id="email" name="email">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="password" class="col-xs-3 control-label">Password</label>
+					<div class="col-xs-3">
+						<input type="password" class="form-control" id="passwword"
+							placeholder="password" name="password">
+					</div>
+				</div>
+				<div class="form-inline">
+					<div class="col-xs-offset-3 col-xs-5">
+						<button type="submit" class="btn btn-primary btn-sg">Sign
+							up</button>
+						<a href="login.jsp"><span class="btn btn-primary btn-sg">Sign
+								In</span></a>
+					</div>
+				</div>
+			</form>
 		</div>
-		<div class="form-group">
-			<label for="email" class="col-xs-3 control-label">Email</label>
-			<div class="col-xs-3">
-				<input type="email" placeholder="emailid" class="form-control" id="email" name="email">
-			</div>
 		</div>
-		<div class="form-group">
-			<label for="password" class="col-xs-3 control-label">Password</label>
-			<div class="col-xs-3">
-				<input type="password" class="form-control" id="passwword" placeholder="password" name="password">
-			</div>
-		</div>
-		<div class="form-inline">
-			<div class="col-xs-offset-3 col-xs-5">
-				<button type="submit" class="btn btn-primary btn-sg">Sign up</button>
-				<button type="submit" class="btn btn-primary btn-sg">Sign in</button>
-			</div>
-		</div>
-	</form>
-	</div>
+		</section>
 </body>
 </html>

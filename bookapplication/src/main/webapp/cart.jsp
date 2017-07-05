@@ -9,15 +9,14 @@
 </head>
 <body>
 	<%@ include file="../../header.jsp"%>
-	<div class="content">
-		<div class="container-fluid">
+	<section class="content">
+        <div class="container">
 
 			<div class="row">
 
 				<div class="col-md-8">
-					<h5>My Cart</h5>
 					<c:if test="${empty MY_CART_ITEMS || MY_CART_ITEMS.orderItems.isEmpty()}">
-						<img src="../assets/images/empty-cart.png" width="300" />
+						<img src="../images/empty_cart.jpeg" width="300" />
 						<h5>Your Shopping Cart is empty</h5>
 						<a href="../books" class="btn btn-info">Continue Shopping</a>
 					</c:if>
@@ -49,7 +48,7 @@
 
 
 						<br />
-						<a href="../books" class="btn btn-info">Continue Shopping</a>
+						<a href="../books" class="btn btn-primary btn-sg">Continue Shopping</a>
 
 
 					</c:if>
@@ -97,6 +96,6 @@
 				</c:if>
 			</div>
 		</div>
-	</div>
+</section>
 </body>
 </html>

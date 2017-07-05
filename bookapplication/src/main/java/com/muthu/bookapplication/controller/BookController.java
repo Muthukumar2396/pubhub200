@@ -50,7 +50,7 @@ public class BookController {
 		else {
 			books = bookService.findAll();
 		}
-		System.out.println(books);
+		LOGGER.info(books);
 		session.setAttribute("books", books);
 		return "booklist";
 	}
@@ -61,7 +61,7 @@ public class BookController {
 	}
 	@GetMapping("/{id}")
 	public String show(@PathVariable("id") Long id, ModelMap modelMap, HttpSession session) {
-		System.out.println("ShowBook:" + id);
+		LOGGER.info("ShowBook:" + id);
 		book = bookRepo.findOne(id);
 		modelMap.addAttribute("SELECTED_BOOK", book);
 		return "view";

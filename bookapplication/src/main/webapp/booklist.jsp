@@ -5,18 +5,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="css/custom.css" rel="stylesheet">
 <title>Insert title here</title>
 </head>
 <body>
-	<%@ include file="../../header.jsp"%><br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+	<%@ include file="../../header.jsp"%>
+	<section class="content">
+        <div class="container">
 	<span> <b> Sort by : </b>
 	</span> Price :
 	<a href="../books?price=asc"> <span class="btn btn-primary btn-sg">Low
@@ -52,6 +47,7 @@
 			</c:forEach>
 		</tbody>
 	</table>
-
+</div>
+</section>
 </body>
 </html>

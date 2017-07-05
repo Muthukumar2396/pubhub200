@@ -5,23 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/custom.css" rel="stylesheet">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/custom.css" rel="stylesheet">
 
 <link
 	href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
 	rel='stylesheet' type='text/css'>
-<!-- jQuery -->
-<script src="js/jquery-1.11.3.min.js"></script>
+	<!-- jQuery -->
+<script src="../js/jquery-1.11.3.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 
 <!-- Plugin JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
+<script src="../js/jquery.easing.min.js"></script>
 
 <!-- Custom Javascript -->
-<script src="js/custom.js"></script>
+<script src="../js/custom.js"></script>
 
 <nav id="siteNav" class="navbar navbar-default navbar-fixed-top"
 	role="navigation">
@@ -41,6 +41,8 @@
 							${LOGGED_IN_USER.name} </a></li>
 					<li class="nav-item"><a class="nav-link" href="/books">List
 							Books</a></li>
+							<li class="nav-item"><a class="nav-link"
+						href="../../orders/cart">Cart</a></li>
 					<li class="nav-item"><a class="nav-link"
 						href="../../author/logout">Logout</a></li>
 				</c:if>

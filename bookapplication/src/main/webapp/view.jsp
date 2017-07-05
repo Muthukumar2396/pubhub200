@@ -9,15 +9,8 @@
 </head>
 <body>
 	<%@ include file="../../header.jsp"%><br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-
+<section class="content">
+        <div class="container">
 	<b>Item Details</b>
 
 	<c:if test="${empty LOGGED_IN_USER}">
@@ -53,5 +46,7 @@
 			</tr>
 		</table>
 	</form>
+	</div>
+	</section>
 </body>
 </html>

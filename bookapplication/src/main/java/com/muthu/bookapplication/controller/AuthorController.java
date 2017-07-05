@@ -44,6 +44,7 @@ public class AuthorController {
 	@GetMapping("/logout")
 	public String logout(HttpSession session) {
 		session.invalidate();
+		LOGGER.info("logged out");
 		return "redirect:../index.jsp";
 	}
 }
