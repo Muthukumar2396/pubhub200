@@ -42,13 +42,15 @@
 					<li class="nav-item"><a class="nav-link" href="/books">List
 							Books</a></li>
 							<li class="nav-item"><a class="nav-link"
+						href="../../orders/myorders">Myorders</a></li>
+							<li class="nav-item"><a class="nav-link"
 						href="../../orders/cart">Cart</a></li>
 					<li class="nav-item"><a class="nav-link"
 						href="../../author/logout">Logout</a></li>
 				</c:if>
 				<c:if test="${empty LOGGED_IN_USER}">
-					<li><a href="register.jsp">Signup</a></li>
-					<li><a href="login.jsp">Signin</a></li>
+					<li><a href="../users/register">Signup</a></li>
+					<li><a href="../users/login">Signin</a></li>
 				</c:if>
 				<li><a href="#">Contact</a></li>
 			</ul>

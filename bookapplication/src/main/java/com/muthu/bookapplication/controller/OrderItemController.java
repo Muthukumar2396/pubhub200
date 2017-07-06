@@ -81,7 +81,7 @@ public class OrderItemController {
 	@GetMapping("/remove")
 	public String removeItemFromCart(@RequestParam("id") Integer id, HttpSession session) {
 
-		System.out.println("Remove Item from Card:" + id);
+		System.out.println("Remove Item from Cart:" + id);
 		Order order = (Order) session.getAttribute("MY_CART_ITEMS");
 
 		if (order != null && order.getOrderItems().size() > 0) {

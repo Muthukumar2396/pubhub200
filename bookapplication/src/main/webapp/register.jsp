@@ -38,7 +38,7 @@
 					<div class="col-xs-offset-3 col-xs-5">
 						<button type="submit" class="btn btn-primary btn-sg">Sign
 							up</button>
-						<a href="login.jsp"><span class="btn btn-primary btn-sg">Sign
+						<a href="../login.jsp"><span class="btn btn-primary btn-sg">Sign
 								In</span></a>
 					</div>
 				</div>

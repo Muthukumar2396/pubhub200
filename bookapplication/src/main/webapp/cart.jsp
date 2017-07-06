@@ -18,7 +18,7 @@
 					<c:if test="${empty MY_CART_ITEMS || MY_CART_ITEMS.orderItems.isEmpty()}">
 						<img src="../images/empty_cart.jpeg" width="300" />
 						<h5>Your Shopping Cart is empty</h5>
-						<a href="../books" class="btn btn-info">Continue Shopping</a>
+						<a href="../books"><span class="btn btn-primary btn-sg">Continue Shopping</span></a>
 					</c:if>
 					<c:if test="${!empty MY_CART_ITEMS && !MY_CART_ITEMS.orderItems.isEmpty()}">
 						<table border="1" class="table table-bordered">
@@ -48,7 +48,7 @@
 
 
 						<br />
-						<a href="../books" class="btn btn-primary btn-sg">Continue Shopping</a>
+							<a href="../books"><span class="btn btn-primary btn-sg">Continue Shopping</span></a>
 
 
 					</c:if>

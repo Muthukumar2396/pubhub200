@@ -31,7 +31,7 @@ public class OrderController {
 		User loggedInUser = (User) session.getAttribute("LOGGED_IN_USER");
 		List<Order> list = orderService.findByUserIdOrderByIdDesc(loggedInUser.getId());
 		modelMap.addAttribute("MY_ORDERS", list);
-		return "order/listmyorders";
+		return "listmyorders";
 
 	}
 	
@@ -44,7 +44,7 @@ public class OrderController {
 			System.out.println(order);
 		}
 		modelMap.addAttribute("ORDERS_LIST", list);
-		return "order/list";
+		return "list";
 
 	}
 
@@ -70,7 +70,6 @@ public class OrderController {
 		else if ("DELIVERED".equals(status)) {
 			order.setDeliveredDate(LocalDate.now());
 		}
-		
 		order.setStatus(status);
 		orderService.save(order);	
 		return "redirect:../orders/myorders";
