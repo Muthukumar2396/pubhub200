@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link href="css/custom.css" rel="stylesheet">
-<title>Insert title here</title>
+<title>Books</title>
 </head>
 <body>
 	<%@ include file="../../header.jsp"%>
