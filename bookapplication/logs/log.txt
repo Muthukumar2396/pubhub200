@@ -11238,3 +11238,5 @@ java.lang.NullPointerException: null
 2017-07-07 01:16:51.443  INFO 5036 --- [http-nio-8080-exec-8] c.m.b.controller.AuthorController        : Entering Login qww@gmail.com-12345
 2017-07-07 01:16:51.503  INFO 5036 --- [http-nio-8080-exec-8] c.m.b.controller.AuthorController        : User:User(id=278, name=qw, email=qww@gmail.com, password=12345)
 2017-07-07 01:16:51.508  INFO 5036 --- [http-nio-8080-exec-8] c.m.b.controller.AuthorController        : Login Success
+2017-07-07 01:39:06.173  INFO 5036 --- [http-nio-8080-exec-1] c.m.b.controller.BookController          : Entering list
+2017-07-07 01:39:06.400  INFO 5036 --- [http-nio-8080-exec-1] c.m.b.controller.BookController          : [Book(id=1, name=Core Java, price=350, releasedDate=2017-04-10 00:00:00.0), Book(id=2, name=MySQL, price=200, releasedDate=2017-01-20 00:00:00.0), Book(id=3, name=Javascript, price=250, releasedDate=2017-03-12 00:00:00.0)]
