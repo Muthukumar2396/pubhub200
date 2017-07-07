@@ -21,8 +21,6 @@
 			to Low</span></a>
 	<a href="../books?released_date=desc"><span
 		class="btn btn-primary btn-sg">Newest First</span></a>
-	<a href="../books/sales"><span class="btn btn-primary btn-sg">Top
-			Books</span></a>
 	<table class="table">
 		<thead>
 			<tr>
